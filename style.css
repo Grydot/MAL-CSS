@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800);
+
+/*Links*/
+[href] {
+    text-decoration: none;
+    color: #C4573F;
+}
+
+[href]:hover {
+    color: #9ac714;
+}
+
+
+/*Main container*/
+#list_surround {
+        position: relative;
+    background-image: url('http://multiversitystatic.s3.amazonaws.com/uploads/2014/08/Guillaume-Singelin-14.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px 125px;
+    background-size: 30% auto;
+        background-attachment: fixed;
+        font-family: "Roboto", "Arial";
+        font-size: 16px;
+}
+
+/*Hide navigation (menu for Watching, Completed, etc.)*/
+[class^=status_] {
+    display: none;
+}
+
+/*Hide stats*/
+#grand_totals, .category_totals {
+    padding-top: 5px;
+    color: #5C5347;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+/*Position list*/
+#list_surround [cellpadding="0"] {
+    width: 640px;
+    left: 33%;
+    position: relative;
+}
+
+/*Categories (Watching, Completed, etc.)*/
+[class^=header_]  {
+        margin-right: 100%;
+        margin-top: 10px;
+        white-space: nowrap;
+}
+
+.header_title {
+    color: #655050;
+        font-family: "Alegreya Sans SC", "Arial";
+    font-size: 32px;
+    font-weight: 800;
+    padding: 10px 0 0;
+}
+
+/*Column headers*/
+.table_header {
+    padding: 8px 8px 0px 8px;
+}
+
+.table_headerLink {
+    color: #e29a8d;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/*Rows*/
+.td1 {
+    background-color: #FFFFFF;
+}
+
+.td2 {
+    background-color: #F5F4E9;
+        border-top: 1px solid #DEE8C2;
+        border-bottom: 1px solid #DEE8C2;
+}
+
+.td2:first-child {
+        border-left: 1px solid #DEE8C2;
+}
+
+.td2:last-child {
+        border-right: 1px solid #DEE8C2;
+}
+
+.td1, .td2 {
+    padding: 8px;
+}
+
+.td1, .td2, .animetitle {
+    color: #5C5347;
+        font-size: 13px;
+}
+
+[id^="scor"] {
+    color: #aa5f4a;
+}
+
+/*Add/Edit - More
+[style^="float: right"] {
+    display: none;
+}
+*/
+/*Copyright*/
+#copyright {
+    font-size: 12px;
+        font-weight: 300;
+        padding-top: 60px;
+        margin-bottom: 30px;
+}
